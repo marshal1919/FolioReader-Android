@@ -1,0 +1,63 @@
+[versions]
+#androidMinSdk = 21
+#androidCompileSdk = 30
+#androidTargetSdk = 28
+
+androidGradlePlugin = "8.1.0"
+kotlin = "1.8.0"
+
+folioreaderSdk = "0.5.4"
+r2SharedKotlin = "1.0.4-2"
+r2StreamerKotlin = "1.0.4-2"
+appcompat = "1.6.1"
+constraintLayout = "2.1.4"
+recyclerview = "1.3.0"
+material = "1.8.0"
+slf4j="1.7.25"
+swipelayout="1.2.0"
+eventbus="3.1.1"
+junit="4.12"
+daimajia="1.2.0"
+
+retrofit = "2.5.0"
+jackson = "2.9.7"
+gson = "2.8.5"
+spring-core="4.3.19.RELEASE"
+lifecycle = '2.2.0'
+
+[libraries]
+androidx-appcompat={group="androidx.appcompat",name="appcompat",version.ref="appcompat"}
+androidx-constraintlayout={group="androidx-constraintlayout",name="constraintlayout",version.ref="constraintLayout"}
+androidx-recyclerview={group="androidx.recyclerview",name="recyclerview",version.ref="recyclerview"}
+google-android-material={group="com.google.android.material",name="material",version.ref="material"}
+junit={group="junit",name="junit",version.ref="junit"}
+
+slf4j={group="org.slf4j",name="slf4j-android",version.ref="slf4j"}
+daimajia-swipelayout={group="com.daimajia.swipelayout",name="library",version.ref="daimajia"}
+
+jetbrains-kotlin={group="org.jetbrains.kotlin",name="kotlin-stdlib",version.ref="kotlin"}
+
+greenrobot={group="org.greenrobot",name="eventbus",version.ref="eventbus"}
+
+fasterxml-jackson-core={group="com.fasterxml.jackson.core",name="jackson-core",version.ref="jackson"}
+fasterxml-jackson-annotations={group="com.fasterxml.jackson.core",name="jackson-annotations",version.ref="jackson"}
+fasterxml-jackson-databind={group="com.fasterxml.jackson.core",name="jackson-databind",version.ref="jackson"}
+fasterxml-jackson-module={group="com.fasterxml.jackson.module",name="jackson-module-kotlin",version.ref="jackson"}
+
+google-code-gson={group="com.google.code.gson",name="gson",version.ref="gson"}
+
+squareup-retrofit2-retofit={group="com.squareup.retrofit2",name="retrofit",version.ref="retrofit"}
+squareup-retrofit2-converter-jackson={group="com.squareup.retrofit2",name="converter-jackson",version.ref="retrofit"}
+squareup-retrofit2-converter-gson={group="com.squareup.retrofit2",name="converter-gson",version.ref="retrofit"}
+
+github-codetoart-shared={group="com.github.codetoart",name="r2-shared-kotlin",version.ref="r2SharedKotlin"}
+github-codetoart-streamer={group="com.github.codetoart",name="r2-streamer-kotlin",version.ref="r2StreamerKotlin"}
+
+springframework={group="org.springframework",name="spring-core",version.ref="spring-core"}
+
+androidx-lifecycle={group="androidx.lifecycle",name="lifecycle-extensions",version.ref="lifecycle"}
+
+[plugins]
+android-application = { id = "com.android.application", version.ref = "androidGradlePlugin" }
+android-library = { id = "com.android.library", version.ref = "androidGradlePlugin" }
+kotlin-android={ id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }

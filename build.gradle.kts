@@ -1,12 +1,17 @@
 // Top-level build file where you can add configuration options common to all sub-projects/modules.
+plugins {
+    alias(libs.plugins.android.application) apply false
+    alias(libs.plugins.android.library)apply false
+    alias(libs.plugins.kotlin.android)apply false
+}
+//apply {from("versions.gradle")}
 
-buildscript {
-    apply from: 'versions.gradle'
+task<Delete>("clean",{
+    delete(rootProject.buildDir)
+})
 
-    repositories {
-        google()
-        jcenter()
-    }
+/*buildscript {
+
 
     dependencies {
         classpath "com.android.tools.build:gradle:$versions.androidGradlePlugin"
@@ -28,14 +33,6 @@ allprojects {
         }
     }
 
-    repositories {
-        mavenLocal()
-        google()
-        jcenter()
-        maven { url "https://jitpack.io" }
-    }
 }
+*/
 
-task clean(type: Delete) {
-    delete rootProject.buildDir
-}
